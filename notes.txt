@@ -1,0 +1,28 @@
+* react-router
+    * use <Link> for internal to activate client side routing
+        * otherwise, find to use normal <a>
+
+* Redux
+    * solves nested components passing props way down the chain
+    * makes sure components are actually reusable by being able to access state easily from anywhere
+
+* Redux Actions
+    * object that gets sent to the store
+
+* Reducers
+    * 1. reducers are pure functions
+        * example of NOT pure function:
+            * let a = 10;
+            * const add = (b) => (a + b) // not pure bc it accesses global a
+    * 2. never directly changes state or action
+
+* Higher order components (HOCs)
+    * Advantages:
+        * reuse code
+        * render hijacking
+        * prop manipulation
+        * abstract state
+
+* Production webpack
+    * ~6mb - most is source maps
+    * webpack -p
